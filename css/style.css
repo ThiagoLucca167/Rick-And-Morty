@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid.no-space{
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 14rem;
+    background-image: url(../img/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-season{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: chartreuse;
+}
+
+.container.text-title{
+    position: relative;
+    text-align: center;
+}
+.container.text-title h4{
+    color: blue;
+}
+#carouselIndicators{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+#carouselIndicators li{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 40px;
+    background-color: #00000070;
+}
+
+.carousel-item{
+    border: 1px solid;
+    background-color: rgb(53, 51, 51);
+    padding: 50px;
+}
+
+video{
+    width: 100%;
+    border: 2px solid #35ff00;
+    border-radius: 5%;
+    padding: 5%;
+}
+
+.carousel-control-prev{
+    width: 50px!important;
+    height: 50px;
+    margin: auto;
+    border-radius: 35%;
+    border-color: transparent;
+    background-color: aqua;
+}
+.carousel-control-next{
+    width: 50px!important;
+    height: 50px;
+    margin: auto;
+    border-radius: 35%;
+    border-color: transparent;
+    background-color: aqua;
+}
+
+/*Mobiles resolution*/
+
+@media screen and (max-width:499px){
+    .banner{
+        max-height: 6rem !important;
+    }
+    
+    #carouselIndicators{
+        width: 80%!important;
+    }
+    .carousel-item{
+        padding: 30px!important;
+    }
+    .carousel-control-prev{
+    width: 30px!important;
+    height: 30px;
+    border-radius: 45%;
+    }
+    .carousel-control-next{
+    width: 30px!important;
+    height: 30px;
+    border-radius: 45%;
+    }
+}
+
+@media screen and (min-width:500px){
+    #carouselIndicators{
+        width: 80%!important;
+    }
+    .banner{
+        min-height:18rem;
+        
+    }
+}
+@media screen and (min-width:1000px){
+    #carouselIndicators{
+        width: 80%!important;
+    }
+    .banner{
+        min-height:18rem;
+        
+    }
+}
+
